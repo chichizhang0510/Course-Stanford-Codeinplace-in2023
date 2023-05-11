@@ -331,6 +331,15 @@ if __name__ == '__main__':
 
 >We’ve reached an error 🛑. Negative numbers are outside of the domain of square roots, so when we try to call math.sqrt(-1) we get an error. The same is true for calling math.log() on zero or negative numbers.
 
+ # code5 :  Mad Libs 
+
+Edit constant for to have the value 
+
+# code6 : Multiply Two Numbers
+
+Write a Python program that takes two integer inputs from the user and calculates the value of the first number multiplied with the second. 
+
+
 # 5.10 6th class : [Control Flow](https://codeinplace.stanford.edu/cip3/learn/lesson-6-overall)
 
 ## recap
@@ -399,5 +408,19 @@ While Loops
 
 Infinite Loops
 
+# code7 : Joke Bot
 
+Write a simple joke bot. The bot starts by asking the user what they want. However, your program will only respond to one response: **Joke**. 
+
+# code8 : Random Numbers
+
+The starter code for this program prints out a single random number in the range 1 to 100, inclusive. Modify this program so that instead of printing one random number, it prints 10. 
+
+# code9 : Double It 
+
+Write a program that asks a user to enter a number. Your program will then double that number and print out the result. It will repeat that process until the value is 100 or greater.
+
+# code10 : Liftoff 
+
+Write a program that prints out the calls for a spaceship that is about to launch. Countdown from 10 to 1 and then output `Liftoff!`
 
