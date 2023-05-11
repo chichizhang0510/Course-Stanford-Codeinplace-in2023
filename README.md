@@ -197,4 +197,207 @@ Write a customizable version of the classic "hello world!" program in `main.py` 
 In this task, Karel will always start by standing in front of a pile of beepers. Karel needs to pick up the entire pile of beepers and spread them out along the row so that there is exactly one beeper in each cell, and exactly as many cells with beepers as were in the original pile. Karel should spread the first beeper into the cell where the pile was.
 
 
+# 5.09 5th class : expressions
+
+## expressions
+
+### get input
+
+### arithmetic operators
+
+addition+ \ subtraction- \ multiplication* \ division/ \ integer division// \ remainder% \ exponentiation \ negation
+
+### precedence
+
+**()** —— ****** —— - —— ***,/,//,%** —— **+,-**
+
+> operators in same predencence categpry are evaluated left to right
+
+### type conversion
+
+exponentiation depends on the result
+
+float sometimes is not exact
+
+### shorthands
+
+## constants
+
+is outside (before) the function
+
+## math library
+
+```python
+import math
+
+# build-in constants
+math.pi
+path.e
+
+# useful function
+math.sqrt(x) # square root
+math.exp(x) # exponent
+math.log(x) 
+```
+
+## random numbers
+
+```python
+import random
+
+# pseudorandom number : use seed
+random.randint(min,max) # integer (inclusive)
+random.random() # real number between 0~1
+random.uniform(min,max) # real number
+random.seed(x) # set seed for random number
+```
+
+## dice simulator
+
+## reading
+
+###   REPL : **Read**-**Eval**-**Print Loop**
+
+```
+To use REPL in the terminal, you can simply type python: 
+$ python
+>>> 
+
+You can exit the REPL by pressing Ctrl+D and you should see your normal starting terminal line: 
+$ python
+>>> [Ctrl+D]
+$ 
+```
+
+>The triple arrow shows up to let you know that you have entered the REPL. You can type any line of python code and hit enter and then the terminal will read the line, evaluate it, and print the results out to the user just like we would see in the Python Console!
+
+###  Basic Arithmetic 
+
+**how to account for conversion loss**?
+
+it is important to note that the int() function simply chops off anything after the decimal. No rounding is involved. This can be dangerous. If we convert a float to an int and then back again, we might lose information. This is called **conversion loss.**
+
+### random
+
+###  Advanced Arithmetic 
+
+| Operation        | Symbol  | Example                   |
+| ---------------- | ------- | ------------------------- |
+| Integer Division | **//**  | $ python>>> 10 // 42      |
+| Exponentiation   | ***\*** | >>> 2 ** 38>>> 2 ** -10.5 |
+| Modulus          | **%**   | >>> 8 % 32                |
+| Unary Negation   | **-**   | >>> x = 0.5>>> -x-0.5     |
+
+```python
+def main(): 
+    x = 36.0 // 10
+    y = -5 // 2
+    print(x) # 3.0
+    print(y) # -3
+
+if __name__ == '__main__':
+    main()
+```
+
+>The second example is just meant to show what rounding down looks like for negative numbers. -5 / 2 is -2.5 and because integer division rounds down instead of truncating the value, the result is -3 (since -3 is less than -2). 
+
+#### Precedence
+
+**highest**
+
+| () parentheses    |
+| ----------------- |
+| ** exponentiation |
+| -   negation      |
+| *  /  //  %       |
+| +  -              |
+| comparison        |
+| not               |
+| and or            |
+
+**lowest**
+
+```python
+import math
+
+def main(): 
+    ans = math.exp(math.sqrt(-1) * math.pi)
+    ans += 1
+    print(ans)
+
+if __name__ == '__main__':
+    main()
+```
+
+>We’ve reached an error 🛑. Negative numbers are outside of the domain of square roots, so when we try to call math.sqrt(-1) we get an error. The same is true for calling math.log() on zero or negative numbers.
+
+# 5.10 6th class : [Control Flow](https://codeinplace.stanford.edu/cip3/learn/lesson-6-overall)
+
+## recap
+
+what is variable?
+
+how to create, modify, use the variable?
+
+binary operators
+
+## while / if
+
+condition is boolean that is either true or false
+
+### create the evaluation mechanism by ourselves
+
+comparison operators
+
+> **==** / **!=** / **<** / **>** / **<=** / **>=**
+
+algebraic relation
+
+## booleans
+
+logical operator
+
+> **not** / **and** / **or**
+
+can chain tests in condition as in algebra
+
+precedence
+
+> **arithmetic** > **comparison** > **not** > **and/or**
+
+boolean variables
+
+```python
+x = 1 < 2 # True
+y = 5.0 == 4.0 # False
+c = True
+```
+
+## for loops
+
+## reading
+
+###  Conditionals 
+
+Comparison Operations
+
+Logical Operations
+
+Logical Expressions
+
+Precedence : use parentheses 
+
+### Loops 
+
+For vs While Loops
+
+For Loops
+
+range()
+
+While Loops
+
+Infinite Loops
+
+
 
