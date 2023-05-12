@@ -40,29 +40,34 @@ def main():
     while loop:
         name_planet = input("Enter a planet: ")
         name_planet = name_planet.capitalize()
-        if name_planet == "Mercury":
-            planet_w = FRACTION["Mercury"] * earth_w
+        if name_planet in FRACTION:
+            planet_w = FRACTION[name_planet] * earth_w
             loop = False
-        elif name_planet == "Venus":
-            planet_w = FRACTION["Venus"] * earth_w
-            loop = False
-        elif name_planet == "Mars":
-            planet_w = FRACTION["Mars"] * earth_w
-            loop = False
-        elif name_planet == "Jupiter":
-            planet_w = FRACTION["Jupiter"] * earth_w
-            loop = False
-        elif name_planet == "Saturn":
-            planet_w = FRACTION["Saturn"] * earth_w
-            loop = False
-        elif name_planet == "Uranus":
-            planet_w = FRACTION["Uranus"] * earth_w
-            loop = False
-        elif name_planet == "Neptune":
-            planet_w = FRACTION["Neptune"] * earth_w
-            loop = False
-        else :
+        else:
             print("Your input is invalid. Please try again.")
+#         if name_planet == "Mercury":
+#             planet_w = FRACTION["Mercury"] * earth_w
+#             loop = False
+#         elif name_planet == "Venus":
+#             planet_w = FRACTION["Venus"] * earth_w
+#             loop = False
+#         elif name_planet == "Mars":
+#             planet_w = FRACTION["Mars"] * earth_w
+#             loop = False
+#         elif name_planet == "Jupiter":
+#             planet_w = FRACTION["Jupiter"] * earth_w
+#             loop = False
+#         elif name_planet == "Saturn":
+#             planet_w = FRACTION["Saturn"] * earth_w
+#             loop = False
+#         elif name_planet == "Uranus":
+#             planet_w = FRACTION["Uranus"] * earth_w
+#             loop = False
+#         elif name_planet == "Neptune":
+#             planet_w = FRACTION["Neptune"] * earth_w
+#             loop = False
+#         else :
+#             print("Your input is invalid. Please try again.")
 
     print(f"The equivalent weight on {name_planet}: {round(planet_w,2)}")
 
