@@ -815,7 +815,7 @@ if __name__ == '__main__':
 
 
 
-# code :  Quilt 
+# code13 :  Quilt 
 
 ```python
 '''A quilt, as you may know, is a blanket often composed of repeating "patches".Each patch has height and width of 100 pixels, given by the constant PATCH_SIZE. There are two different patch patterns that repeat in different locations.'''
